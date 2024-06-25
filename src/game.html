@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="players">
+            <div class="p1">
+            </div>
+            <div class="pinfos">
+                <div class="escudoHolder">
+                    <div class="pE"></div>
+                </div>
+                <div class="pLife">
+                    <div class="pV"></div>
+                </div>
+                <div class="bullets">
+                </div>
+            </div>
+        </div>
+        <div class="enemies">
+            <div class="p2">
+            </div>
+            <div class="pinfos">
+                <div class="escudoHolder">
+                    <div class="eE"></div>
+                </div>
+                <div class="eLife">
+                    <div class="eV"></div>
+                </div>
+                <div class="Ebullets" id="reverse">
+                    <div class="Ebullet"></div>
+                    <div class="Ebullet"></div>
+                    <div class="Ebullet"></div>
+                    <div class="Ebullet"></div>
+                    <div class="Ebullet"></div>
+                    <div class="Ebullet"></div>
+                    <div class="Ebullet"></div>
+                    <div class="Ebullet"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="btnSec">
+        <div class="buttons">
+            <div class="ataque">Atacar</div>
+            <div class="troca">Trocar</div>
+            <div class="itens">Itens</div>
+            <div class="def">Defender</div>
+            <div class="sair">Correr</div>
+        </div>
+        <div class="ataques" id="hudOpts">
+            <div class="at" onclick="dano(0)">
+                <div class="op">
+                    <div class="esc">N</div>Tiro preciso
+                </div>
+                <div class="st">STA 15</div>
+            </div>
+            <div class="at" onclick="dano(1)">
+                <div class="op">
+                    <div class="esc">M</div>Rajada
+                </div>
+                <div class="st">STA 20</div>
+            </div>
+            <div class="at" onclick="dano(2)">
+                <div class="op">
+                    <div class="esc">CC</div>Coronhada
+                </div>
+                <div class="st">STA 0</div>
+            </div>
+            <div class="at" onclick="dano(3)">
+                <div class="op">
+                    <div class="esc">D</div>Recarregar
+                </div>
+                <div class="st">STA 0</div>
+            </div>
+            <div class="at">
+                <div class="op">
+                    <div class="esc">E</div>Granada
+                </div>
+                <div class="st">STA 30</div>
+            </div>
+        </div>
+        <div class="trocar" id="hudOpts">
+            <div class="troca">
+                <div class="foto"></div>
+                <div class="desc"></div>
+            </div>
+            <div class="troca">
+                <div class="foto"></div>
+                <div class="desc"></div>
+            </div>
+        </div>
+        <div class="itensC" id="hudOpts">
+            <div class="volta"></div>
+            <div class="options">
+                <div class="opts" onclick="item(0)">Cura simples</div>
+                <div class="opts" onclick="item(1)">Dano++</div>
+                <div class="opts" onclick="item(2)">Escudo simples</div>
+                <div class="opts" onclick="item(3)">Cura Media</div>
+            </div>
+            <div class="avanca">></div>
+        </div>
+        <div class="infos">
+            <div class="title">INFO</div>
+            <div class="infosA">
+                <div class="desc">Um tiro unico, porém preciso.</div>
+                <div class="dano">
+                    <li>DANO 10</li>
+                </div>
+                <div class="gasto">
+                    <li>Gasto 15 STA</li>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="codes/batteStart.js"></script>
+<script src="codes/unityPlayer.js"></script>
+<script src="codes/unityEnemy.js"></script>
+<script src="codes/states.js"></script>
+<script src="codes/images.js"></script>
+<script src="codes/ui.js"></script>
+
+</html>
